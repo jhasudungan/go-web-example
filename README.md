@@ -44,6 +44,8 @@ As a REST-API it can :
 To try the login process , after the application up and running , you can go to **login**.
 You can find account and password of this project in : **/data-user.json**. You can modified it and create your own user data.
 
+![Image, screenshoot](/github/example-screenshoot.png)
+
 ## Testing The REST API
 
 Once application up and running , you can try a GET request:
@@ -74,8 +76,8 @@ curl --location 'http://localhost:8081/api/v1/login' \
 --data '{
     "username" : "osheere3",
     "password" : "1234"
-}
-'
+}'
+
 ```
 
 If success , it will send back JWT as response : 
