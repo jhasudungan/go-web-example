@@ -1,0 +1,2 @@
+GORILLA_SESSION_SECRET=supersecretkey
+JWT_SECRET=supersecretkey

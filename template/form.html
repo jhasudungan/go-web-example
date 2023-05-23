@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golang Web Example</title>
+
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+   
+    <section class="hero is-default is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1280px-Go_Logo_Blue.svg.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li><a href="/">&#127968; Home</a></li>
+                                    <li><a href="/about">&#128220; About</a></li>
+                                    <li><a href="/form">&#128195; Form</a></li>
+                                    <li><a href="/login">&#128273; Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>    
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-offset-3 is-half">
+                <form action="/form-post" class="box" method="post" >
+                    <div class="field">
+                        <div class="notification is-link is-light">
+                            Form is one of the most important thing on web application. Below is the example of form &#128195; , try to fill and submit the form.
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control">
+                            <input class="input is-primary" type="text" name="username" placeholder="e.g : jeredungan">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Full Name</label>
+                        <div class="control">
+                            <input class="input is-primary" type="text" name="fullname" placeholder="e.g : Jeremiah Hasudungan">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input is-primary" type="email" name="email" placeholder="e.g : jeremiah.hasudungan@hotmail.com">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="button is-primary is-fullwidth" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
